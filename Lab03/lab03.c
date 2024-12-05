@@ -1,4 +1,4 @@
-#include "lab.h"
+#include "lab03.h"
 
 int main() {
     print_message();

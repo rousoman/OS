@@ -2,10 +2,10 @@ CC = gcc
 CFLAGS = -Wall -Wextra
 
 # Target executable name
-TARGET = lab
+TARGET = lab03
 
 # Source files
-SOURCES = lab.c
+SOURCES = lab03.c
 
 # Object files
 OBJECTS = $(SOURCES:.c=.o)
@@ -18,7 +18,7 @@ $(TARGET): $(OBJECTS)
 	$(CC) $(OBJECTS) -o $(TARGET)
 
 # Compile source files to object files
-%.o: %.c lab.h
+%.o: %.c lab03.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Clean up generated files
